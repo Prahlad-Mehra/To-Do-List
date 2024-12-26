@@ -26,6 +26,20 @@ add.addEventListener('click',()=>{
         li.appendChild(tsk)
         li.appendChild(crossbutton)
         lst.appendChild(li)
+        //putting functionality of removing and checkbox done
+        crossbutton.addEventListener('click',()=>{
+            li.remove();
+        })
+        box.addEventListener('change',(check)=>{
+            if(check.target.checked){
+                li.style.backgroundColor='#59d966'
+                tsk.style.textDecoration='line-through'
+            }
+            else{
+                li.style.backgroundColor='transparent'
+                tsk.style.textDecoration='none'
+            }
+        })
     }
     else{
         input.value=""
