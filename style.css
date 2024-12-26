@@ -67,18 +67,18 @@ body{
     color:white;
 }
 #id2{
-    /* color:rgb(255, 78, 50); */
     color:#ff8400;
 }
 #id3{
     color:white;
 }
 li{
-    /* background-color: aqua; */
     list-style-type: none;
     display: flex;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 p{
     flex:1;
@@ -99,6 +99,7 @@ p{
     border:none;
     cursor: pointer;
     background-color: white;
+
 }
 .cross:hover{
     background-color: #c7c7c7;
